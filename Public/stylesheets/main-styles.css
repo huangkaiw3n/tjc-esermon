@@ -1,0 +1,228 @@
+.md-toolbar-tools h1 {
+	font-size: inherit;
+	font-weight: inherit;
+	margin: inherit;
+ }
+
+.pagebinder{
+	width:100%;
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+/*------------toolbar theme related------------*/
+md-toolbar.md-default-theme {
+    background-color: #4F618D;
+    color: rgba(255,255,255,0.87);
+}
+
+/*------------Font Related------------*/
+a:link{
+	text-decoration: none;
+}
+
+a:hover{
+	color: #08163B;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+.huge-text{
+	font-size: 30px;
+	font-family: 'RobotoDraft', 'Roboto', 'Helvetica Neue', sans-serif;
+	color:#4F618D;
+}
+
+.second-title-text{
+	font-size: 18px;
+	font-family: 'RobotoDraft', 'Roboto', 'Helvetica Neue', sans-serif;
+	color:#4F618D;
+}
+
+.second-title-text-white{
+	font-size: 18px;
+	font-family: 'RobotoDraft', 'Roboto', 'Helvetica Neue', sans-serif;
+	color:white;
+}
+
+ .small-text{
+ 	font-size: 15px;
+	font-family: 'RobotoDraft', 'Roboto', 'Helvetica Neue', sans-serif;
+	color:#4F618D;
+ }
+
+.small-text-12{
+	font-size: 12px;
+	font-family: 'RobotoDraft', 'Roboto', 'Helvetica Neue', sans-serif;
+	color:#a2a2a2;
+}
+
+.super-small-text{
+	font-size: 10px;
+	font-family: 'RobotoDraft', 'Roboto', 'Helvetica Neue', sans-serif;
+	color:#4F618D;
+}
+
+.small-text-white{
+	font-size: 15px;
+	font-family: 'RobotoDraft', 'Roboto', 'Helvetica Neue', sans-serif;
+	color:rgba(255,255,255,0.87);
+}
+
+ .discover-title{
+ 	font-size: 22px;
+	font-family: 'RobotoDraft', 'Roboto', 'Helvetica Neue', sans-serif;
+	font-weight: bold;
+	color: #4F618D;
+ }
+
+
+
+
+/*------------Discover related------------*/
+.discover-card{
+	max-width: 350px;
+	height: 490px;
+	width: 95%;
+}
+
+.discover-picture{ /*Has to be div related*/
+ 	width: 100%;
+ 	height: 300px;
+ }
+
+ .no-crop{
+	 display: block;
+	 width: 100%;
+	 height: auto;
+ }
+
+ .discover-wp-border{
+ 	width:100%;
+	max-width: 160px;
+	background: #4F618D;
+	border-radius: 15px;
+	text-align: center;
+}
+
+
+/*------------Individual Discover------------*/
+ .indiv-discover-card{
+ 	max-width: 2000px
+ }
+
+span.indiv-discover-picture{
+	max-width: 370px;
+ 	max-height: 300px;
+ 	overflow:hidden;
+}
+
+
+
+/*------------Footer Related------------*/
+footer {
+	background-color: #4F618D;
+	width:100%;
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+.footer, .push {
+	height: 60px; /* .push must be the same height as .footer */
+}
+
+.footer-font{
+	color:rgba(255,255,255,0.87);
+}
+
+.footer-small-text-white{
+	font-size: 10px;
+	font-family: 'RobotoDraft', 'Roboto', 'Helvetica Neue', sans-serif;
+	color:rgba(255,255,255,0.87);
+}
+
+
+/*------------Wrapper Footer related------------*/
+.wrapper {
+	min-height: 400px;
+	/*height: auto; /!* This line and the next line are not necessary unless you need IE6 support *!/*/
+	/*height: 100%;*/
+	width: 100%;
+	max-width: 1150px;
+	margin: 0 auto -60px; /* the bottom margin is the negative value of the footer's height */
+}
+
+
+/*------------Media Issues------------*/
+@media (max-width:450px){
+
+}
+
+/*------------Notification Badge------------*/
+.badge1 {
+	position:relative;
+}
+
+.badge1[data-badge ="0"]:after {
+	content: none;
+}
+
+
+.badge1[data-badge]:after {
+	content:attr(data-badge);
+	position:absolute;
+	top:-2px;
+	right:-20px;
+	font-size:.7em;
+	background:#830300;
+	color:white;
+	width:18px;height:18px;
+	text-align:center;
+	line-height:18px;
+	border-radius:50%;
+	box-shadow:0 0 1px #333;
+}
+
+/*------------Animation------------*/
+.animate-show.ng-hide-add,
+.animate-show.ng-hide-remove {
+	-webkit-transition:all linear 0.5s;
+	-moz-transition:all linear 0.5s;
+	-o-transition:all linear 0.5s;
+	transition:all linear 0.5s;
+	display:block!important;
+}
+
+.animate-show.ng-hide-add.ng-hide-add-active,
+.animate-show.ng-hide-remove {
+	line-height:0;
+	opacity:0;
+	padding:0 5px;
+}
+
+.animate-show.ng-hide-add,
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+	line-height:19px;
+	opacity:1;
+	padding:5px;
+	background:white;
+}
+
+.check-element {
+	padding:5px;
+	background:white;
+}
+
+/*------------colours related------------*/
+.md-primary.md-raised.md-button.md-default-theme {
+	background-color: #4F618D;
+}
+
+.md-fab.md-mini.md-primary.md-button.md-default-theme{
+	background-color: #4F618D;
+}
+
+/*------------Bitbucket related------------*/
+

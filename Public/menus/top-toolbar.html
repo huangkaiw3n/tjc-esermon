@@ -1,0 +1,11 @@
+<md-toolbar layout="row">
+  <div class="md-toolbar-tools" ng-controller="NavCtrl">
+    <md-button ng-click="toggleSidenav('left')" hide-gt-lg class="md-icon-button">
+      <md-icon aria-label="Menu" md-svg-icon="https://s3-us-west-2.amazonaws.com/s.cdpn.io/68133/menu.svg"></md-icon>
+    </md-button>
+    <div style="width:100%">
+      <a href="" ng-click="go('discover.html')"><img width="110" height="32" src="http://i1078.photobucket.com/albums/w497/wantaton/logowhitepng_zpskbanoagc.png"></a>
+      <div style="float:right;padding-right:10px; padding-top:4px;"><span style="width:100px;"><a href="" ng-click="go('userFAQ.html')"><h1 style="text-align:right">WP: {{user.wp}}/{{user.max_wp}}</h1></a></span></div>
+    </div>
+  </div>
+</md-toolbar>

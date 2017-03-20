@@ -1,0 +1,51 @@
+<md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('(min-width: 1160px)')">
+<!-- Insert sidenav options here -->
+  <md-toolbar class="md-theme-indigo">
+    <!--<h1 class="md-toolbar-tools">Menu</h1>-->
+    <!--<div style="max-height: 100px;width:100px;"><div style="width: 290px;"><img style="padding-left: 10px;height: 156px; width:151px;" class="profile-picture" src={{userPicture}}><span>Damn</span></div></div>-->
+    <div><h1 class="md-toolbar-tools">Menu</h1></div>
+    <div>
+      <md-list-item>
+        <img ng-src={{userPicture}} class="md-avatar" />
+        <p>{{user.name}}</p>
+        </md-list-item>
+    </div>
+  </md-toolbar>
+  <md-list ng-controller="NavCtrl">
+    <md-list-item ng-click="go('discover.html')">
+      <img ng-src="http://iconizer.net/files/Brightmix/orig/monotone_earth_world_america.png" class="md-avatar" />
+      <p>Giveaways</p>
+    </md-list-item>
+    <!--<md-divider></md-divider>-->
+    <!--<md-list-item ng-click="go('friends.html')">-->
+      <!--<img ng-src="http://webismymind.com/images/icons/user-icon.png" class="md-avatar" />-->
+      <!--<p>Friends</p>-->
+    </md-list-item>
+    <!--<md-divider></md-divider>-->
+    <md-list-item ng-click="go('profile.html')">
+      <img ng-src="https://cdn3.iconfinder.com/data/icons/black-easy/512/535106-user_512x512.png" class="md-avatar" />
+      <p>Profile</p>
+    </md-list-item>
+    <!--<md-divider></md-divider>-->
+    <md-list-item ng-click="go('perks.html')">
+      <img ng-src="https://cdn0.iconfinder.com/data/icons/common-icons/512/cart.png" class="md-avatar" />
+      <p>Perks</p>
+    </md-list-item>
+    <!--<md-divider></md-divider>-->
+    <md-list-item ng-click="go('notifications.html')" ng-controller="notifCtrl">
+      <img ng-src="https://cdn2.iconfinder.com/data/icons/app-icons-2/100/icon_62998-512.png" class="md-avatar" />
+      <div style="text-align: left" class="badge1" data-badge="{{total}}">Notifications</div>
+    </md-list-item>
+    <!--<md-divider></md-divider>-->
+    <md-list-item ng-click="go('userFAQ.html')">
+      <img ng-src="https://cdn4.iconfinder.com/data/icons/defaulticon/icons/png/256x256/help.png" class="md-avatar" />
+      <p>FAQ</p>
+    </md-list-item>
+    <!--<md-divider></md-divider>-->
+    <md-list-item ng-click="go('logout')">
+      <img ng-src="https://cdn3.iconfinder.com/data/icons/token/128/Power-Shutdown.png" class="md-avatar" />
+      <p>Logout</p>
+    </md-list-item>
+    <!--<md-divider></md-divider>-->
+  </md-list>
+</md-sidenav>
